@@ -1,0 +1,16 @@
+[build]
+  # ... your other build settings
+
+  # You might need to explicitly configure MIME types if Netlify doesn't do it automatically.
+  # For example:
+  # [build.environment]
+  #   NODE_VERSION = "16.14"  # Example node version
+  #  
+  [build.publish]
+    # If your files are in a 'dist' directory, specify it here:
+    # dir = "dist"
+    #  
+  [build.environment.variables]
+    NODE_ENV = "production"
+  [headers]
+    /manifest.webmanifest = { Content-Type = "application/manifest+json" }
