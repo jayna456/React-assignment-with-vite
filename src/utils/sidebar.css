@@ -1,0 +1,12 @@
+.MuiAccordion-root {
+    background-color: transparent !important; 
+    color: white !important;
+}
+
+.MuiAccordion-root:focus-visible {
+    border: none !important;
+}
+
+.MuiAccordion-heading:focus-visible {
+    border: none !important;
+}

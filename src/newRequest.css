@@ -1,0 +1,78 @@
+.set-font {
+    color: #D175B6 !important;
+    text-transform: none !important;
+    border: solid 2.5px #D175B6 !important;
+}
+.set-bgcolor {
+    background-color: #D175B6 !important;
+    color: white !important;
+}
+.set-border {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+.setBorder {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.set-font:focus-within {
+    outline: none !important;
+}
+
+.set-coordinat {
+    color: white !important;
+    border: solid 1px white !important;
+}
+
+.set-coordinat .MuiFormLabel-root {
+    color: white !important;
+}
+
+.set-coordinat .MuiAutocomplete-endAdornment {
+    color: white !important;
+}
+
+.text-white .MuiInputBase-input {
+    color: white !important;
+    border: solid 1px white !important; 
+}
+
+.coordinate-box {
+    height: 60px;
+    border: solid 1px #D175B6 !important;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.rdt_Table {
+  background-color: black !important;
+  border: 2px solid #d175b6 !important;
+  border-bottom: none !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+.rdt_TableHead {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.rdt_TableRow {
+  border-bottom: 2px solid #d175b6 !important;
+}
+
+.rdt_Pagination {
+  background-color: black !important;
+  justify-content: flex-end !important;
+  color: white !important;
+  font-size: 15px !important;
+  border: 2px solid #d175b6 !important;
+  border-top: none !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.btn-edit {
+    background-color: #D75AD7 !important;
+    font-weight: bold !important;
+}

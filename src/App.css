@@ -1,0 +1,81 @@
+#root {
+  margin: 0;
+  padding: 2rem;
+  background-color: #9849b7;
+  background-image: linear-gradient(147deg, #000000 0%, #9849b7 74%);
+}
+
+@keyframes root {
+  0% {
+    background-position: 0% 0%; /* Initial position */
+  }
+  100% {
+    background-position: 100% 0%; /* Shift to the end */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #root {
+    animation: root infinite 5s linear;
+  }
+}
+
+@media (max-width: 440px) { 
+  .hide-on-mobile {
+    display: none; 
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.rdt_Table {
+  background-color: transparent !important;
+  border: 2px solid #d175b6 !important;
+  border-bottom: none !important;
+  color: white !important;
+}
+
+.rdt_TableHeader {
+  border-bottom: none !important;
+}
+
+.rdt_TableRow {
+  border-bottom: 2px solid #d175b6 !important;
+}
+
+.rdt_Pagination {
+  background-color: transparent !important;
+  justify-content: center !important;
+  color: white !important;
+  font-size: 15px !important;
+  border: 2px solid #d175b6 !important;
+  border-top: none !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.header-button {
+  background-image: linear-gradient(147deg, #e900fe 0%, #A300FF 74%) !important;
+}
+
+.header-text {
+  border: solid 1px white !important;
+}
+
+.search-icon {
+  color: white !important;
+}
+
+.header-text::placeholder {
+  color: white !important;
+}
+
+::-webkit-input-placeholder {
+  color: white !important;
+}
