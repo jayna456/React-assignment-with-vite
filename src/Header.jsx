@@ -2,7 +2,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import AssignmentLateOutlinedIcon from '@mui/icons-material/AssignmentLateOutlined';
 import { Avatar, Badge, Box, Typography } from '@mui/material'
 import React from 'react'
-import './Header.css'; 
+import './header.css'; 
 
 function Header() {
   return (
