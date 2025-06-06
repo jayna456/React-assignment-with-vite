@@ -12,8 +12,6 @@
     # If your files are in a 'dist' directory, specify it here:
     # dir = "dist"
     #  
-  [build.environment.variables]
-    NODE_ENV = "production"
 [[headers]]
   for = "/manifest.webmanifest"
   [headers.values]
