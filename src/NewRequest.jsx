@@ -2,7 +2,7 @@ import { Autocomplete, Box, Button, ButtonGroup, FormControl, Grid, InputLabel, 
 import React from 'react'
 import Sidebar from './utils/Sidebar'
 import { ArrowBack, StarBorderRounded } from '@mui/icons-material';
-import './NewRequest.css'
+import './newRequest.css'
 import DataTable, { Alignment } from 'react-data-table-component';
 import data from './utils/position.json';
 import Header from './Header';
