@@ -1,5 +1,7 @@
 [build]
   # ... your other build settings
+  publish = "dist"
+  command = "npm run build"
 
   # You might need to explicitly configure MIME types if Netlify doesn't do it automatically.
   # For example:
