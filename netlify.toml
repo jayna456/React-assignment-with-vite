@@ -6,7 +6,7 @@
   # [build.environment]
   #   NODE_VERSION = "16.14"  # Example node version
   #  
-  [build.publish]
+ # [build.publish]
     # If your files are in a 'dist' directory, specify it here:
     # dir = "dist"
     #  
