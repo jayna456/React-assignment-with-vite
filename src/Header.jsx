@@ -9,7 +9,7 @@ function Header() {
     <Box sx={{display: 'flex', justifyContent: 'flex-end'}} mt={0} mb={2}>
         <AssignmentLateOutlinedIcon sx={{marginTop:"10px"}} />
         {/* <Badge badgeContent="" color="secondary" sx={{marginLeft:'10px', marginTop:'10px'}} className='noti-badge' > */}
-            <NotificationsNoneOutlinedIcon />
+            <NotificationsNoneOutlinedIcon sx={{marginLeft:'10px', marginTop:'10px'}} />
         {/* </Badge> */}
         <Box sx={{display:'flex'}} ml={2}>
             <Avatar>M</Avatar>

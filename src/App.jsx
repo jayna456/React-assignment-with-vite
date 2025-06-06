@@ -88,55 +88,57 @@ function App() {
   }
 
   return (
-    <Grid container spacing={2}>
+    <>
       <Header />
-      <Grid size={3} className='hide-on-mobile'>
-        {/* sidebar */}
-        <Sidebar />
-      </Grid>
-      <Grid size={9}>
-        {/* data table */}
-        <DataTable
-          title={
-            <Grid container spacing={2}>
-              <Grid size={6}>
-                <Typography sx={{ fontSize: '18px', alignItems: 'center', paddingTop: '10px' }}>
-                  Event Requests
-                </Typography>
+      <Grid container spacing={2}>
+        <Grid size={3} className='hide-on-mobile'>
+          {/* sidebar */}
+          <Sidebar />
+        </Grid>
+        <Grid size={9}>
+          {/* data table */}
+          <DataTable
+            title={
+              <Grid container spacing={2}>
+                <Grid size={6}>
+                  <Typography sx={{ fontSize: '18px', alignItems: 'center', paddingTop: '10px' }}>
+                    Event Requests
+                  </Typography>
+                </Grid>
+                <Grid size={6} sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+                  <TextField id="outlined-basic" variant="outlined" className='header-text' placeholder='Search here'
+                    slotProps={{
+                      input: {
+                        startAdornment: (
+                          <InputAdornment position="start" className='search-icon'>
+                            <SearchSharp />
+                          </InputAdornment>
+                        ),
+                      },
+                    }} size='small' sx={{ marginRight: '20px' }}
+                  />
+                  <Button variant='container' className='header-button'>+</Button>
+                </Grid>
               </Grid>
-              <Grid size={6} sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-                <TextField id="outlined-basic" variant="outlined" className='header-text' placeholder='Search here'
-                  slotProps={{
-                    input: {
-                      startAdornment: (
-                        <InputAdornment position="start" className='search-icon'>
-                          <SearchSharp />
-                        </InputAdornment>
-                      ),
-                    },
-                  }} size='small' sx={{ marginRight: '20px' }}
-                />
-                <Button variant='container' className='header-button'>+</Button>
-              </Grid>
-            </Grid>
-          }
-          columns={columns}
-          data={data}
-          pagination
-          paginationPerPage={13}
-          paginationTotalRows={data.length}
-          sortIcon={<ArrowDownwardSharp />}
-          responsive={true}
-          customStyles={customStyles}
-          conditionalRowStyle={row => {
-            return {
-              className: 'rdt_TableRow', // Apply the CSS class to all rows
-            };
-          }}
-          subHeaderAlign={Alignment.LEFT}
-        />
+            }
+            columns={columns}
+            data={data}
+            pagination
+            paginationPerPage={13}
+            paginationTotalRows={data.length}
+            sortIcon={<ArrowDownwardSharp />}
+            responsive={true}
+            customStyles={customStyles}
+            conditionalRowStyle={row => {
+              return {
+                className: 'rdt_TableRow', // Apply the CSS class to all rows
+              };
+            }}
+            subHeaderAlign={Alignment.LEFT}
+          />
+        </Grid>
       </Grid>
-    </Grid>
+    </>
   )
 }
 
